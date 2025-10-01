@@ -10,13 +10,18 @@ The machine learning backend is powered by a Logistic Regression model trained o
 ✔️ Uses clinically important features like Age, Chest Pain Type, Cholesterol, Blood Pressure, and more.
 ✔️ Instant visual feedback with a clean and modern UI.
 
+
 🖼️ Demo Screenshots
 🔹 Low Risk Example
 <img width="739" height="849" alt="Screenshot 2025-10-01 223936" src="https://github.com/user-attachments/assets/8830e3bb-89cd-4a32-932c-c316754d4977" />
 
 
+
+
 🔹 High Risk Example
 <img width="528" height="833" alt="Screenshot 2025-10-01 224116" src="https://github.com/user-attachments/assets/ea6b7299-534f-4847-951f-e736e8a62e63" />
+
+
 
 ⚙️ How It Works
 
