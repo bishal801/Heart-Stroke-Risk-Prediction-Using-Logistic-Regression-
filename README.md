@@ -1,53 +1,87 @@
 ❤️ Heart Stroke Risk Prediction
-An interactive web application built with Streamlit that predicts the risk of heart disease based on user-provided health parameters. The machine learning backend is powered by a logistic regression model trained on a labeled dataset of heart health records.
+
+An interactive web application built with Streamlit that predicts the risk of heart disease based on user-provided health parameters.
+The machine learning backend is powered by a Logistic Regression model trained on a labeled dataset of heart health records.
 
 🚀 Features
-Predicts high or low risk of heart disease in real-time.
 
-User-friendly web interface built with Streamlit.
-
-Model uses important clinical features such as age, chest pain type, cholesterol, blood pressure, and more.
-
-Real-time feedback and visually appealing UI.
-
-🛠 How It Works
-The app collects user information such as Age, Gender, Chest Pain Type, Resting Blood Pressure, Cholesterol, and other heart health indicators. These inputs are processed, scaled, and passed to a trained logistic regression model, which outputs the probability of heart disease risk.
+✔️ Real-time prediction of high or low risk of heart disease.
+✔️ User-friendly web interface built with Streamlit.
+✔️ Uses clinically important features like Age, Chest Pain Type, Cholesterol, Blood Pressure, and more.
+✔️ Instant visual feedback with a clean and modern UI.
 
 🖼️ Demo Screenshots
-Low Risk Example
-![Low Risk Result](Screenshot-2025-10-01-223 Risk Example
-![High Risk Result](Screenshot-2025-10-01-224️ Setup and Usage
+🔹 Low Risk Example
+
+🔹 High Risk Example
+
+⚙️ How It Works
+
+The app collects user health information such as:
+
+Age, Gender, Chest Pain Type
+
+Resting Blood Pressure, Cholesterol, Fasting Blood Sugar
+
+Resting ECG, Max Heart Rate, Exercise-Induced Angina
+
+Oldpeak (ST Depression), ST Slope
+
+Inputs are preprocessed and scaled before being passed into the trained Logistic Regression model.
+
+The model outputs the probability of heart disease risk, which is classified into Low Risk or High Risk.
+
+🛠️ Setup and Usage
 
 Clone the repository:
 
-bash
 git clone https://github.com/your-username/heart-stroke-risk-prediction.git
 cd heart-stroke-risk-prediction
+
+
 Install dependencies:
 
-bash
+# Using conda
 conda install joblib streamlit pandas scikit-learn
-# or
+
+# Or using pip
 pip install joblib streamlit pandas scikit-learn
+
+
 Run the app:
 
-bash
 streamlit run app.py
+
+
 Open the provided local URL in your browser to interact with the app.
 
-📁 Files
-app.py : Streamlit web application.
+📁 Project Structure
 
-Pretrained .pkl machine learning model, scaler, and column files.
+app.py → Main Streamlit web application
 
-Example screenshots.
+model.pkl → Pretrained Logistic Regression model
+
+scaler.pkl → Feature scaling object
+
+columns.pkl → Saved feature list for input alignment
+
+Screenshots/ → Example results for Low/High risk
 
 📊 Model Information
-Logistic Regression trained on a processed and one-hot encoded dataset.
 
-Features include: Age, Sex, Chest Pain Type, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, and ST_Slope.
+Algorithm: Logistic Regression
 
-Preprocessing pipeline matches training-time feature engineering for robust predictions.
+Features:
+
+Age, Sex, ChestPainType, RestingBP, Cholesterol, FastingBS,
+
+RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_Slope
+
+Dataset: Processed and one-hot encoded heart health dataset
+
+Preprocessing: Matches training-time transformations for robust predictions
 
 🤝 Contributing
-Feel free to submit issues or pull requests for improvements.
+
+💡 Feel free to open issues or submit pull requests for improvements.
+🚑 Together, we can make AI-driven heart health prediction more accessible.
